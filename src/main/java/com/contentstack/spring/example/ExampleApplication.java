@@ -1,9 +1,11 @@
 package com.contentstack.spring.example;
+
 import com.contentstack.sdk.Error;
 import com.contentstack.sdk.*;
 import org.json.JSONObject;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,9 +17,16 @@ public class ExampleApplication {
 
         // Main call from where app starts to run.
 
-        System.out.println("News Headlines: "+new ExampleApplication().getNewsHeadlines());
-        System.out.println("News Products: "+new ExampleApplication().getProductList());
+        System.out.println("News Headlines: " + new ExampleApplication().getNewsHeadlines());
+        System.out.println("News Products: " + new ExampleApplication().getProductList());
     }
+
+
+//    @GetMapping("/headline")
+//    public String greeting(@RequestParam(name="name", required=false, defaultValue="World") String name, Model model) {
+//        model.addAttribute("name", name);
+//        return "greeting";
+//    }
 
 
     private ArrayList<NewsModel> getNewsHeadlines() {
