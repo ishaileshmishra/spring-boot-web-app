@@ -14,9 +14,9 @@
     <name>SampleApp</name>
     <description>Example application using contentstack</description>
 
-    <properties>
-        <java.version>11</java.version>
-    </properties>
+<!--    <properties>-->
+<!--        <java.version>11</java.version>-->
+<!--    </properties>-->
 
     <dependencies>
 

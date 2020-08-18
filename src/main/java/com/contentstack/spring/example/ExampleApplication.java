@@ -1,11 +1,9 @@
 package com.contentstack.spring.example;
-
 import com.contentstack.sdk.Error;
 import com.contentstack.sdk.*;
 import org.json.JSONObject;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
 import java.util.ArrayList;
 import java.util.List;
 
