@@ -1,4 +1,4 @@
-package com.contentstack.spring.example;
+package com.contentstack.webapp;
 
 import com.contentstack.sdk.Error;
 import com.contentstack.sdk.*;
