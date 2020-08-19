@@ -30,7 +30,7 @@ This guide is meant to give you a quick taste of integration of Contentstack-Jav
 
 - When you finish, you can check your results against the code in gs-spring-boot/complete.
 
-## Step: 3 Open pom.xml
+## Step: 3 Add Contentstack Dependency
 
 add dependency:
 
