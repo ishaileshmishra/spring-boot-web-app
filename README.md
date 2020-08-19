@@ -1,10 +1,40 @@
-# Contentstack JavaSDK Using Spring
+# Building an Application with Contentstack-Java SDK and Spring-Boot
 
-A Sample Example Code for contentstack Java using Spring
+A Sample Example Code for contentstack-Java SDK using Spring-Boot,
+This guide is meant to give you a quick taste of integration of Contentstack-Java SDK with Spring Boot web-app. If you want to create your own Spring Boot-based project, visit [Spring Initializr](https://start.spring.io/), fill in your project details, pick your options, and download a bundled up project as a zip file.
 
-Step: 1 Open pom.xml
+
+## Step: 1 You will build a simple news web application with Spring Boot and contentstack Java SDK.
+
+
+- About 15 minutes
+
+- A favorite text editor or IDE
+
+- JDK 1.8 or later
+
+- Gradle 4+ or Maven 3.2+
+
+
+## Step: 2 How to complete this guide
+
+- To start from scratch, move on to Starting with [Spring Initializr](https://start.spring.io/).
+
+- To skip the basics, do the following:
+
+- Download and unzip the source repository for this guide, or clone it using Git: git clone https://github.com/ishaileshmishra/contentstack-java-spring-example.git
+
+- cd into contentstack-java-spring-example/initial
+
+- Jump ahead to Create a Simple Web Application.
+
+- When you finish, you can check your results against the code in gs-spring-boot/complete.
+
+## Step: 3 Open pom.xml
 
 add dependency:
+
+For Maven
 
 ```
 <dependency>
@@ -14,35 +44,34 @@ add dependency:
 </dependency>
 ```
 
-Open ExampleApplication.java containing main class, add below contentstack snippet
+For Gradle
 
 ```
-@SpringBootApplication
-public class ExampleApplication {
+implementation 'com.contentstack.sdk:java:1.5.3'
+```
 
-    public static void main(String[] args) throws Exception {
-        SpringApplication.run(ExampleApplication.class, args);
-        Stack stack = Contentstack.stack("blt02f7b45378b008ee", "cs5b69faf35efdebd91d08bcf4", "production");
-        Query query = stack.contentType("product").query();
-        query.includeContentType();
-        query.find(new QueryResultsCallBack() {
-            @Override
-            public void onCompletion(ResponseType responseType, QueryResult queryresult, Error error) {
-                if (error == null) {
-                    List<Entry> entryList = queryresult.getResultObjects();
-                    if (queryresult.getResultObjects().size() > 0) {
-                        for (Entry entry : entryList) {
-                            System.out.println("entry: " + entry.getTitle());
-                        }
-                    }
-                } else {
-                    System.out.println("Error: " + error);
-                }
-            }
-        });
-    }
 
-}
+## Step: 4 Run the Application
+
+
+To run the application, run the following command in a terminal window (in the complete) directory
+
+```
+./gradlew bootRun
+```
+
+If you use Maven, run the following command in a terminal window (in the complete) directory:
+
+```
+./mvnw spring-boot:run
+```
+
+
+Now run the service with curl (in a separate terminal window), by running the following command (shown with its output):
+
+```
+$ curl localhost:8080
+Headlines from Spring Boot!
 ```
 
 ![Screenshot](https://github.com/ishaileshmishra/example/blob/master/snapshot.png?raw=true)
