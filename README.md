@@ -67,6 +67,8 @@ If you use Maven, run the following command in a terminal window (in the complet
 ```
 
 
+
+
 Now run the service with curl (in a separate terminal window), by running the following command (shown with its output):
 
 ```
