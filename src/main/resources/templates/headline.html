@@ -35,7 +35,7 @@
                                     <div class="col-md-4">
                                         <div class="post-media">
                                             <a href="#" title="">
-                                                <img src="./images/one.jpg" alt="image" class="post-image img-fluid">
+                                                <img th:src="${news.image}" alt="image" class="post-image img-fluid">
                                                 <!-- <img src="${news.image}" alt="image" class="img-fluid"> -->
                                                 <div class="hovereffect"></div>
                                             </a>
@@ -43,7 +43,7 @@
                                     </div>
 
                                     <div class="blog-meta big-meta col-md-8">
-                                        <h4 th:text="${news.title}"></h4>
+                                        <h4 th:utext="${news.title}"></h4>
                                         <div class="content" th:utext="${news.description}"></div>
                                     </div>
                                 </div>

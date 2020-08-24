@@ -44,7 +44,10 @@ public class NewsController {
                         List<Entry> result = queryresult.getResultObjects();
                         for (Entry entry : result) {
                             JSONObject response = entry.toJSON();
-                            newsHeadlines.add(new NewsModel(response.optString("title"), response.optString("body"), ""));
+                            JSONObject url = response.optJSONObject("thumbnail");
+                            String imageUrl = url.optString("url");
+                            newsHeadlines.add(new NewsModel(response.optString("title"),
+                                    response.optString("body"), imageUrl));
                         }
                     }
                 }
