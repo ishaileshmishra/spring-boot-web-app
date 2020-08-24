@@ -11,9 +11,4 @@ $(document).ready(function(){
         return false;
     });
 
-    // var divs = window.document.querySelectorAll('div.content');
-    // divs.forEach(function (div) {
-    //     div.innerHTML = div.innerText;
-    // });
-
 });

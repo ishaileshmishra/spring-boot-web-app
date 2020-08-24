@@ -1,7 +1,7 @@
 /**************************************
     Table of Content
     1. BASIC
-    2. Landing Page
+    2. LANDING PAGE
     3. BLOG
     4. FOOTER
 **************************************/
@@ -12,7 +12,7 @@
 body {
   font-size: 15px;
   line-height: 26px;
-  background-color: #ffffff;
+  background-color: #e6e6e6;
 }
 
 h1,
@@ -88,45 +88,100 @@ h6 {
 
 a {
   color: #111111;
+  text-decoration: none !important;
 }
 
-body,
 p {
   color: #5e5e5e;
-}
-
-p {
   margin-bottom: 26px;
   font-size: 15px;
   line-height: 26px;
 }
 
-a {
-  text-decoration: none !important;
-}
-
-/* Landing Page
+/* LANDING PAGE
 **************************************/
-.card {
-  border: 0;
-  text-align: center;
-  /* background-image: linear-gradient(270deg,#b64d71,#eb5646); */
-}
-.card .btn {
-  background-image: linear-gradient(270deg, #b64d71, #eb5646);
-  border: 0;
-  color: #fff;
-  padding: 40px
-}
-
-.card .btn:hover{
-    background: #ec5646;
-    box-shadow: 0 2px 19px 0 rgba(183,70,58,.5);
-}
 .card-wrapper {
-  position: relative;
-  margin: 50px;
+  margin: 70px 0;
 }
+.card-link{
+    color: #000;
+    display:block;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.card-link:hover{
+    color: #000;
+}
+.card {
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    border: 1px solid rgba(87, 31, 188,.4);
+    margin: 0 auto;
+    position: relative;
+  }
+  .card-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .card:hover {
+     animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(209, 85, 71,.4);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(209, 85, 71, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(209, 85, 71, 0);
+    }
+  }
+
+/*--Button Styles--*/
+/* .btn {
+    position: relative;
+    color: #D1C4E9;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: #D1C4E9 1px 0 10px;
+    height: 175px;
+    width: 175px;
+    border: solid 1px #D1C4E9;
+    border-radius: 175px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .btn:before {
+    content: '';
+    position: absolute;
+    background: #9575CD;
+    width: 0;
+    height: 0;
+    z-index: -1;
+    border-radius: 175px;
+    box-shadow: 0px 0px 24px 1px rgba(224,199,224,0.2);
+    transition: all 900ms cubic-bezier(1.000, -0.195, 0.000, 1.330);
+    transition-timing-function: cubic-bezier(1.000, -0.195, 0.000, 1.330);
+  }
+  
+  .btn:hover:before {
+    width: 85%;
+    height: 85%;
+  }
+  
+  .btn:active:before, .btn:focus:before {
+    width: 100%;
+    height: 100%;
+  } */
 
 /* .card-wrapper .card-sec {
     position: absolute;
@@ -176,9 +231,9 @@ a {
   transform: scale(1.1);
 }
 
-.post-image{
+/* .post-image{
     border-radius:50%;
-}
+} */
 
 .page-title {
   padding: 3rem 0;
