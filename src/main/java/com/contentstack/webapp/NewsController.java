@@ -16,18 +16,7 @@ import java.util.List;
 public class NewsController {
 
 
-    @GetMapping("/")
-    public String home(@RequestParam(name = "name", required = false, defaultValue = "World") String name, Model model) {
-        //model.addAttribute("name", name);
 
-        ArrayList<NewsModel> listOfHeadlines = getNewsHeadlines();
-        if (listOfHeadlines == null || listOfHeadlines.size() == 0) {
-            model.addAttribute("headlineDTO", "Could not fetch Headlines..");
-        } else {
-            model.addAttribute("headlineDTO", getNewsHeadlines());
-        }
-        return "headline";
-    }
 
     @GetMapping("/headline")
     public String headline(@RequestParam(name = "name", required = false, defaultValue = "World") String name, Model model) {
