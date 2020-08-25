@@ -7,8 +7,6 @@ This guide is meant to give you a quick taste of integration of Contentstack-Jav
 ## Step: 1 You will build a simple news web application with Spring Boot and contentstack Java SDK.
 
 
-- About 15 minutes
-
 - A favorite text editor or IDE
 
 - JDK 1.8 or later
