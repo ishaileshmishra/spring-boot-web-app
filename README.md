@@ -7,8 +7,6 @@ This guide is meant to give you a quick taste of integration of Contentstack-Jav
 ## Step: 1 You will build a simple news web application with Spring Boot and contentstack Java SDK.
 
 
-- About 15 minutes
-
 - A favorite text editor or IDE
 
 - JDK 1.8 or later
@@ -51,7 +49,16 @@ implementation 'com.contentstack.sdk:java:1.5.3'
 ```
 
 
-## Step: 4 Run the Application
+## Step: 4 For View Rendering
+
+```
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-thymeleaf</artifactId>
+</dependency>
+```
+
+## Step: 5 Run the Application
 
 
 To run the application, run the following command in a terminal window (in the complete) directory
@@ -65,8 +72,6 @@ If you use Maven, run the following command in a terminal window (in the complet
 ```
 ./mvnw spring-boot:run
 ```
-
-
 
 
 Now run the service with curl (in a separate terminal window), by running the following command (shown with its output):

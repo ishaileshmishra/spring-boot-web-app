@@ -15,6 +15,9 @@ import java.util.List;
 @Controller
 public class NewsController {
 
+
+
+
     @GetMapping("/headline")
     public String headline(@RequestParam(name = "name", required = false, defaultValue = "World") String name, Model model) {
         //model.addAttribute("name", name);
@@ -25,7 +28,6 @@ public class NewsController {
         } else {
             model.addAttribute("headlineDTO", getNewsHeadlines());
         }
-        System.out.println(listOfHeadlines);
         return "headline";
     }
 
