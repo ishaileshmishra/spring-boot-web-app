@@ -20,7 +20,7 @@ This guide is meant to give you a quick taste of integration of Contentstack-Jav
 
 - To skip the basics, do the following:
 
-- Download and unzip the source repository for this guide, or clone it using Git: git clone https://github.com/ishaileshmishra/contentstack-java-spring-example.git
+- Download and unzip the source repository for this guide, or clone it using Git: git clone https://github.com/ishaileshmishra/https://github.com/ishaileshmishra/spring-boot-web-app.git.git
 
 - cd into contentstack-java-spring-example/initial
 
