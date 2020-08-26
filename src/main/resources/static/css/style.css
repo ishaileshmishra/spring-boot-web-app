@@ -1,10 +1,12 @@
 /**************************************
     Table of Content
-	1. BASIC
-	2. NAVIGATION
+	  1. BASIC
+	  2. NAVIGATION
     3. LANDING PAGE
     4. BLOG
-    5. FOOTER
+    5. ABOUT
+    6. CONTACT
+    7. FOOTER
 **************************************/
 
 /* BASIC
@@ -257,11 +259,21 @@ li a:hover::after {
   margin: 0;
 }
 .post-media {
-  border-radius: 50%;
-  position: relative;
+  /* border-radius: 50%;
+  height: 273px;
   overflow: hidden;
+  position: relative;
+  width: 273px; */
+  display: inline-block;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 50%;
 }
 .post-media img {
+  width: 100%;
+  height: 100%;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
@@ -367,6 +379,16 @@ li a:hover::after {
   background-color: #ffffff;
   padding: 1rem 1.5rem 1rem;
 }
+/* ABOUT
+**************************************/
+.about-image{ margin: 0 0 30px;}
+.about-image img{ border-radius:10px;}
+
+/* CONTACT
+**************************************/
+.contact-image img{ border-radius:10px;}
+.contact-content p { margin:0 !important;}
+
 /* FOOTER
 **************************************/
 

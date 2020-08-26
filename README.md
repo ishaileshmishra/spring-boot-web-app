@@ -81,6 +81,11 @@ $ curl localhost:8080
 Headlines from Spring Boot!
 ```
 
+Or simply click on the below url hosted on herokuapp
+
+[View Website](https://shaileshmishra.herokuapp.com)
+
+
 ![Screenshot](https://github.com/ishaileshmishra/example/blob/master/snapshot.png?raw=true)
 
 

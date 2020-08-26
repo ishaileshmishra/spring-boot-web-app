@@ -4,7 +4,7 @@
     <title>Products</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="News Blog">
     <meta name="description" content="News Blog">
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
@@ -34,7 +34,7 @@
                         <div class="page-wrapper">
                             <div class="blog-list clearfix" th:each="news:${products}">
                                 <div class="blog-box row">
-                                    <div class="col-md-4">
+                                    <div class="blog-image col-md-4">
                                         <div class="post-media">
                                             <a href="#" title="">
                                                 <img th:src="${news.image}" alt="image" class="post-image img-fluid">
@@ -59,7 +59,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <div class="copyright">&copy; 2020 Products. design by: contentstack</div>
+                        <div class="copyright">&copy; 2020 design by: contentstack</div>
                     </div>
                 </div>
             </div><!-- end container -->
