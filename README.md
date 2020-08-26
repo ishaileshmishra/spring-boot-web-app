@@ -1,6 +1,6 @@
-# Web-App Using Contentstack-java SDK and Spring-Boot
+# Spring Boot web-app
 
-A Sample Example Code for contentstack-Java SDK using Spring-Boot,
+A Sample Example Code for web-app using Spring-Boot,
 This guide is meant to give you a quick taste of integration of Contentstack-Java SDK with Spring Boot web-app. If you want to create your own Spring Boot-based project, visit [Spring Initializr](https://start.spring.io/), fill in your project details, pick your options, and download a bundled up project as a zip file.
 
 
@@ -28,28 +28,8 @@ This guide is meant to give you a quick taste of integration of Contentstack-Jav
 
 - When you finish, you can check your results against the code in gs-spring-boot/complete.
 
-## Step: 3 Add Contentstack Dependency
 
-add dependency:
-
-For Maven
-
-```
-<dependency>
-   <groupId>com.contentstack.sdk</groupId>
-   <artifactId>java</artifactId>
-   <version>1.5.3</version>
-</dependency>
-```
-
-For Gradle
-
-```
-implementation 'com.contentstack.sdk:java:1.5.3'
-```
-
-
-## Step: 4 For View Rendering
+## Step: 3 For View Rendering
 
 ```
 <dependency>
@@ -58,7 +38,7 @@ implementation 'com.contentstack.sdk:java:1.5.3'
 </dependency>
 ```
 
-## Step: 5 Run the Application
+## Step: 4 Run the Application
 
 
 To run the application, run the following command in a terminal window (in the complete) directory
@@ -83,7 +63,7 @@ Headlines from Spring Boot!
 
 Or simply click on the below url hosted on herokuapp
 
-[View Website](https://shaileshmishra.herokuapp.com)
+### [WEBSITE](https://shaileshmishra.herokuapp.com)
 
 
 ![Screenshot](https://github.com/ishaileshmishra/example/blob/master/snapshot.png?raw=true)
